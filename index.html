@@ -4,7 +4,7 @@
 <head>
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script> -->
   <script src="js/ui-bootstrap.js"></script>
@@ -19,22 +19,26 @@
     <label class="btn btn-primary" ng-model="bigData.lunch" uib-btn-checkbox>Lunch</label>
     <label class="btn btn-primary" ng-model="bigData.dinner" uib-btn-checkbox>Dinner</label>
   </div>
-  <pre>{{bigData | json}}</pre>
+
+  <pre>
+      {{bigData | json}}
+    </pre>
 
   <div class="panel panel-default">
-        <div class="panel-heading">
-          <h4 class="panel-title">
-            <a href="#" ng-click="isCollapsed = !isCollapsed">
-              Collapsible Group Item #1
-            </a>
-          </h4>
-        </div>
-        <div collapse="isCollapsed">
-          <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a href="#" ng-click="isCollapsed = !isCollapsed">
+          Collapsible Group Item #1
+        </a>
+      </h4>
     </div>
-    
+    <div collapse="isCollapsed">
+      <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+        you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+
 
 </body>
 
